@@ -14,8 +14,8 @@
         android:id="@+id/viewfinder_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:inner_width="layout_width"
-        app:inner_height="layout_height"
+        app:inner_width=layout_width*0.7
+        app:inner_height=layout_height*0.7
 <!--         app:inner_margintop="230dp" -->
         app:inner_corner_color="@color/scan_corner_color_blue"
         app:inner_corner_length="20dp"
