@@ -49,7 +49,7 @@ public class SecondActivity extends AppCompatActivity {
       if (currentOrientation == Configuration.ORIENTATION_PORTRAIT) {
          setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
       }else {
-         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
       }
         //end
         lightLayout = findViewById(R.id.scan_light);
