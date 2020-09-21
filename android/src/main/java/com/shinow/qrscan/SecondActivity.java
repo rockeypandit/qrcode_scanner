@@ -1,5 +1,6 @@
 package com.shinow.qrscan;
-
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
