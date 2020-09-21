@@ -42,6 +42,15 @@ public class SecondActivity extends AppCompatActivity {
         captureFragment.setAnalyzeCallback(analyzeCallback);
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_my_container, captureFragment).commit();
 
+        
+        //added for lock orientation
+         int currentOrientation = getResources().getConfiguration().orientation;
+      if (currentOrientation == Configuration.ORIENTATION_PORTRAIT) {
+         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+      }else {
+         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+      }
+        //end
         lightLayout = findViewById(R.id.scan_light);
         backLayout = findViewById(R.id.scan_back);
         photoLayout = findViewById(R.id.choose_photo);
